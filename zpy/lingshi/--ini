@@ -1,0 +1,1039 @@
+*** Starting uWSGI 2.0.20 (64bit) on [Sun Aug  7 10:03:22 2022] ***
+compiled with version: 9.3.0 on 18 March 2022 15:16:40
+os: Linux-5.4.0-90-generic #101-Ubuntu SMP Fri Oct 15 20:00:55 UTC 2021
+nodename: VM-12-2-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/ubuntu/zhiku
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/ubuntu/zhiku/djangoproject
+your processes number limit is 15359
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 26 2021, 20:14:08)  [GCC 9.3.0]
+PEP 405 virtualenv detected: /home/ubuntu/zhiku
+Set PythonHome to /home/ubuntu/zhiku
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55d37d7f7f90
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 364520 bytes (355 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55d37d7f7f90 pid: 2967476 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2967476)
+spawned uWSGI worker 1 (pid: 2967478, cores: 1)
+spawned uWSGI worker 2 (pid: 2967479, cores: 1)
+spawned uWSGI worker 3 (pid: 2967480, cores: 1)
+spawned uWSGI worker 4 (pid: 2967481, cores: 1)
+Not Found: /
+[pid: 2967481|app: 0|req: 1/1] 180.115.183.62 () {42 vars in 868 bytes} [Sun Aug  7 03:11:13 2022] GET / => generated 2288 bytes in 106 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967480|app: 0|req: 1/2] 180.115.183.62 () {42 vars in 824 bytes} [Sun Aug  7 03:11:13 2022] GET /favicon.ico => generated 2339 bytes in 93 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 2/3] 180.115.183.62 () {42 vars in 878 bytes} [Sun Aug  7 06:02:40 2022] GET / => generated 2297 bytes in 58 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967480|app: 0|req: 2/4] 180.115.183.62 () {42 vars in 843 bytes} [Sun Aug  7 06:02:40 2022] GET /favicon.ico => generated 2348 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 3/5] 180.115.183.62 () {44 vars in 909 bytes} [Sun Aug  7 06:02:57 2022] GET / => generated 2297 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 3/6] 198.199.93.88 () {34 vars in 400 bytes} [Sun Aug  7 06:05:08 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 4/7] 180.115.183.62 () {42 vars in 872 bytes} [Sun Aug  7 06:21:23 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967481|app: 0|req: 4/8] 180.115.183.62 () {42 vars in 832 bytes} [Sun Aug  7 06:21:23 2022] GET /favicon.ico => generated 2343 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 1/9] 180.115.183.62 () {44 vars in 903 bytes} [Sun Aug  7 06:21:27 2022] GET / => generated 2292 bytes in 101 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/login
+[pid: 2967478|app: 0|req: 1/10] 180.115.183.62 () {42 vars in 890 bytes} [Sun Aug  7 06:21:43 2022] GET /api/login => generated 4765 bytes in 92 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 5/11] 180.115.183.62 () {42 vars in 902 bytes} [Sun Aug  7 06:22:07 2022] GET /api/zhiku-login => generated 0 bytes in 1 msecs (HTTP/1.1 301) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 6/12] 180.115.183.62 () {42 vars in 904 bytes} [Sun Aug  7 06:22:07 2022] GET /api/zhiku-login/ => generated 6870 bytes in 36 msecs (HTTP/1.1 200) 8 headers in 392 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 7/13] 220.196.160.95 () {44 vars in 828 bytes} [Sun Aug  7 06:26:58 2022] GET / => generated 2292 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 5/14] 61.147.15.65 () {40 vars in 794 bytes} [Sun Aug  7 11:10:30 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967479|app: 0|req: 2/15] 61.147.15.67 () {40 vars in 702 bytes} [Sun Aug  7 11:15:20 2022] GET /favicon.ico => generated 2343 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 6/16] 61.147.15.67 () {40 vars in 680 bytes} [Sun Aug  7 11:19:06 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 7/17] 61.147.15.67 () {40 vars in 743 bytes} [Sun Aug  7 11:23:40 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 8/18] 167.94.145.59 () {28 vars in 314 bytes} [Sun Aug  7 15:34:40 2022] GET / => generated 2288 bytes in 15 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 3/19] 167.94.145.59 () {34 vars in 449 bytes} [Sun Aug  7 15:34:42 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 4/20] 61.147.15.65 () {40 vars in 650 bytes} [Sun Aug  7 17:15:00 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 9/21] 118.123.105.69 () {32 vars in 468 bytes} [Sun Aug  7 19:40:31 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 10/22] 167.94.138.61 () {28 vars in 314 bytes} [Sun Aug  7 23:33:31 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 2/23] 167.94.138.61 () {34 vars in 449 bytes} [Sun Aug  7 23:33:32 2022] GET / => generated 2288 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 8/24] 192.241.212.14 () {34 vars in 401 bytes} [Mon Aug  8 06:05:37 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /manager/text/list
+[pid: 2967480|app: 0|req: 9/25] 192.241.201.126 () {34 vars in 436 bytes} [Mon Aug  8 07:47:02 2022] GET /manager/text/list => generated 2357 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /manager/text/list
+[pid: 2967479|app: 0|req: 5/26] 180.101.244.16 () {44 vars in 745 bytes} [Mon Aug  8 07:54:57 2022] GET /manager/text/list => generated 2357 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 2967480|app: 0|req: 10/27] 192.241.212.134 () {34 vars in 426 bytes} [Mon Aug  8 08:19:18 2022] GET /manager/html => generated 2342 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /manager/html
+[pid: 2967479|app: 0|req: 6/28] 220.196.160.53 () {44 vars in 735 bytes} [Mon Aug  8 08:24:54 2022] GET /manager/html => generated 2342 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 7/29] 45.148.120.127 () {40 vars in 726 bytes} [Mon Aug  8 19:11:57 2022] GET / => generated 2288 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /WuEL
+[pid: 2967480|app: 0|req: 11/30] 45.148.120.127 () {34 vars in 488 bytes} [Mon Aug  8 19:11:57 2022] GET /WuEL => generated 2314 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /a
+[pid: 2967479|app: 0|req: 8/31] 45.148.120.127 () {40 vars in 728 bytes} [Mon Aug  8 19:12:08 2022] GET /a => generated 2309 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /download/file.ext
+[pid: 2967481|app: 0|req: 11/32] 45.148.120.127 () {40 vars in 760 bytes} [Mon Aug  8 19:12:09 2022] GET /download/file.ext => generated 2357 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /SiteLoader
+[pid: 2967478|app: 0|req: 3/33] 45.148.120.127 () {40 vars in 746 bytes} [Mon Aug  8 19:12:10 2022] GET /SiteLoader => generated 2336 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /mPlayer
+[pid: 2967480|app: 0|req: 12/34] 45.148.120.127 () {40 vars in 740 bytes} [Mon Aug  8 19:12:10 2022] GET /mPlayer => generated 2327 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /SiteLoader
+[pid: 2967479|app: 0|req: 9/35] 180.101.245.253 () {44 vars in 825 bytes} [Mon Aug  8 19:24:30 2022] GET /SiteLoader => generated 2336 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /a
+[pid: 2967480|app: 0|req: 13/36] 59.83.208.104 () {44 vars in 805 bytes} [Mon Aug  8 19:24:36 2022] GET /a => generated 2309 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /mPlayer
+[pid: 2967481|app: 0|req: 12/37] 180.101.245.248 () {44 vars in 819 bytes} [Mon Aug  8 19:24:47 2022] GET /mPlayer => generated 2327 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /download/file.ext
+[pid: 2967478|app: 0|req: 4/38] 180.101.244.11 () {44 vars in 838 bytes} [Mon Aug  8 19:24:49 2022] GET /download/file.ext => generated 2357 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 13/39] 118.123.105.69 () {32 vars in 468 bytes} [Mon Aug  8 21:18:01 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 5/40] 167.94.146.58 () {28 vars in 314 bytes} [Mon Aug  8 23:02:19 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 14/41] 167.94.146.58 () {34 vars in 449 bytes} [Mon Aug  8 23:02:20 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 14/42] 20.55.53.144 () {34 vars in 502 bytes} [Tue Aug  9 04:55:37 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 15/43] 192.241.206.129 () {34 vars in 402 bytes} [Tue Aug  9 06:06:32 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 16/44] 167.248.133.118 () {28 vars in 316 bytes} [Tue Aug  9 13:29:44 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 6/45] 167.248.133.118 () {34 vars in 455 bytes} [Tue Aug  9 13:29:45 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 7/46] 157.245.78.71 () {36 vars in 488 bytes} [Tue Aug  9 15:53:14 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /Dockerrun.aws.json
+[pid: 2967478|app: 0|req: 8/47] 179.43.155.171 () {36 vars in 577 bytes} [Tue Aug  9 20:57:41 2022] GET /Dockerrun.aws.json => generated 2360 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 15/48] 20.118.133.148 () {40 vars in 1455 bytes} [Tue Aug  9 22:37:20 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 16/49] 20.118.133.148 () {40 vars in 1455 bytes} [Wed Aug 10 04:16:19 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 17/50] 192.241.213.173 () {34 vars in 402 bytes} [Wed Aug 10 06:06:34 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 18/51] 220.196.160.53 () {44 vars in 711 bytes} [Wed Aug 10 06:14:35 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 10/52] 174.138.61.44 () {34 vars in 495 bytes} [Wed Aug 10 06:36:27 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 2967481|app: 0|req: 17/53] 54.164.53.216 () {32 vars in 492 bytes} [Wed Aug 10 09:54:12 2022] GET /robots.txt => generated 2336 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 18/54] 54.164.53.216 () {32 vars in 472 bytes} [Wed Aug 10 09:54:12 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /99vt
+[pid: 2967478|app: 0|req: 9/55] 54.164.53.216 () {32 vars in 480 bytes} [Wed Aug 10 09:54:13 2022] GET /99vt => generated 2318 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 2967480|app: 0|req: 19/56] 54.164.53.216 () {32 vars in 492 bytes} [Wed Aug 10 09:54:13 2022] GET /robots.txt => generated 2336 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /99vu
+[pid: 2967479|app: 0|req: 11/57] 54.164.53.216 () {32 vars in 480 bytes} [Wed Aug 10 09:54:13 2022] GET /99vu => generated 2318 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /99vu
+[pid: 2967480|app: 0|req: 20/58] 59.83.208.107 () {44 vars in 808 bytes} [Wed Aug 10 10:05:06 2022] GET /99vu => generated 2318 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /99vt
+[pid: 2967479|app: 0|req: 12/59] 180.101.245.246 () {44 vars in 810 bytes} [Wed Aug 10 10:08:11 2022] GET /99vt => generated 2318 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /99vt
+[pid: 2967478|app: 0|req: 10/60] 59.83.208.108 () {44 vars in 808 bytes} [Wed Aug 10 10:09:43 2022] GET /99vt => generated 2318 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 21/61] 167.94.138.62 () {28 vars in 314 bytes} [Wed Aug 10 12:00:50 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 19/62] 167.94.138.62 () {34 vars in 449 bytes} [Wed Aug 10 12:00:51 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 20/63] 106.75.162.130 () {38 vars in 622 bytes} [Wed Aug 10 13:59:13 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 22/64] 167.248.133.60 () {28 vars in 315 bytes} [Wed Aug 10 15:45:51 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 21/65] 167.248.133.60 () {34 vars in 450 bytes} [Wed Aug 10 15:45:52 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /echo.php
+[pid: 2967481|app: 0|req: 22/66] 5.188.210.227 () {46 vars in 667 bytes} [Wed Aug 10 18:17:23 2022] GET /echo.php => generated 2327 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /nmaplowercheck1660171078
+[pid: 2967481|app: 0|req: 23/67] 50.116.16.97 () {32 vars in 412 bytes} [Wed Aug 10 22:37:59 2022] GET /nmaplowercheck1660171078 => generated 2374 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 23/68] 50.116.16.97 () {32 vars in 365 bytes} [Wed Aug 10 22:37:59 2022] HEAD / => generated 2285 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /HNAP1
+[pid: 2967478|app: 0|req: 11/69] 50.116.16.97 () {32 vars in 374 bytes} [Wed Aug 10 22:37:59 2022] GET /HNAP1 => generated 2317 bytes in 6 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 13/70] 50.116.16.97 () {32 vars in 364 bytes} [Wed Aug 10 22:37:59 2022] GET / => generated 2284 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 24/71] 50.116.16.97 () {26 vars in 284 bytes} [Wed Aug 10 22:37:59 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.0 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 25/72] 50.116.16.97 () {28 vars in 309 bytes} [Wed Aug 10 22:38:00 2022] GET / => generated 2284 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 26/73] 50.116.16.97 () {32 vars in 417 bytes} [Wed Aug 10 22:38:53 2022] HEAD / => generated 2282 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 24/74] 8.219.71.118 () {32 vars in 379 bytes} [Wed Aug 10 23:33:21 2022] GET / => generated 2293 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 14/75] 8.219.119.144 () {32 vars in 380 bytes} [Wed Aug 10 23:46:10 2022] GET / => generated 2293 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /sdk
+[pid: 2967480|app: 0|req: 25/76] 47.92.38.52 () {34 vars in 412 bytes} [Thu Aug 11 02:20:39 2022] POST /sdk => generated 2312 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 27/77] 47.92.38.52 () {26 vars in 283 bytes} [Thu Aug 11 02:20:39 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.0 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /text4041660184439
+[pid: 2967479|app: 0|req: 15/78] 47.92.38.52 () {32 vars in 410 bytes} [Thu Aug 11 02:20:39 2022] GET /text4041660184439 => generated 2353 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 12/79] 47.92.38.52 () {28 vars in 308 bytes} [Thu Aug 11 02:20:39 2022] GET / => generated 2284 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /HNAP1
+[pid: 2967481|app: 0|req: 28/80] 47.92.38.52 () {32 vars in 386 bytes} [Thu Aug 11 02:20:39 2022] GET /HNAP1 => generated 2317 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /evox/about
+[pid: 2967480|app: 0|req: 26/81] 47.92.38.52 () {32 vars in 396 bytes} [Thu Aug 11 02:20:40 2022] GET /evox/about => generated 2332 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 13/82] 47.92.38.52 () {36 vars in 574 bytes} [Thu Aug 11 02:21:00 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967478|app: 0|req: 14/83] 47.92.38.52 () {34 vars in 419 bytes} [Thu Aug 11 02:21:00 2022] GET /favicon.ico => generated 2339 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 15/84] 162.142.125.9 () {28 vars in 314 bytes} [Thu Aug 11 02:44:18 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 27/85] 162.142.125.9 () {34 vars in 449 bytes} [Thu Aug 11 02:44:19 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 29/86] 192.241.219.211 () {34 vars in 402 bytes} [Thu Aug 11 06:07:00 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 30/87] 8.219.119.144 () {32 vars in 380 bytes} [Thu Aug 11 07:10:58 2022] GET / => generated 2293 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 28/88] 8.219.71.118 () {32 vars in 379 bytes} [Thu Aug 11 08:21:24 2022] GET / => generated 2293 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 29/89] 8.219.71.118 () {32 vars in 379 bytes} [Thu Aug 11 08:36:53 2022] GET / => generated 2293 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 31/90] 114.100.176.228 () {36 vars in 485 bytes} [Thu Aug 11 10:04:02 2022] GET / => generated 2286 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 32/91] 114.100.176.228 () {36 vars in 484 bytes} [Thu Aug 11 10:04:02 2022] GET / => generated 2285 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 33/92] 8.219.119.144 () {32 vars in 380 bytes} [Thu Aug 11 19:17:10 2022] GET / => generated 2293 bytes in 65 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 30/93] 8.142.76.188 () {38 vars in 685 bytes} [Fri Aug 12 05:26:00 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /sitemap.xml
+[pid: 2967479|app: 0|req: 16/94] 8.142.76.188 () {30 vars in 362 bytes} [Fri Aug 12 05:26:04 2022] GET /sitemap.xml => generated 2339 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 2967478|app: 0|req: 16/95] 8.142.76.188 () {30 vars in 360 bytes} [Fri Aug 12 05:26:04 2022] GET /robots.txt => generated 2336 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 17/96] 192.241.215.238 () {34 vars in 402 bytes} [Fri Aug 12 06:07:45 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 31/97] 71.6.135.131 () {28 vars in 309 bytes} [Fri Aug 12 06:08:59 2022] GET / => generated 2284 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 32/98] 64.227.78.19 () {36 vars in 487 bytes} [Fri Aug 12 07:10:49 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 17/99] 8.219.119.144 () {32 vars in 380 bytes} [Fri Aug 12 07:42:26 2022] GET / => generated 2293 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 18/100] 180.115.181.2 () {42 vars in 874 bytes} [Fri Aug 12 08:40:57 2022] GET / => generated 2296 bytes in 354 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967481|app: 0|req: 34/101] 180.115.181.2 () {42 vars in 838 bytes} [Fri Aug 12 08:40:57 2022] GET /favicon.ico => generated 2347 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 33/102] 220.196.160.146 () {44 vars in 832 bytes} [Fri Aug 12 08:44:24 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 35/103] 180.115.181.2 () {42 vars in 874 bytes} [Fri Aug 12 08:55:21 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 19/104] 180.115.181.2 () {46 vars in 870 bytes} [Fri Aug 12 08:55:43 2022] POST / => generated 2297 bytes in 3 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 34/105] 180.115.181.2 () {42 vars in 874 bytes} [Fri Aug 12 08:55:59 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 20/106] 180.115.181.2 () {46 vars in 870 bytes} [Fri Aug 12 08:57:47 2022] POST / => generated 2297 bytes in 3 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 36/107] 180.115.181.2 () {44 vars in 905 bytes} [Fri Aug 12 08:58:15 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 37/108] 180.115.181.2 () {42 vars in 884 bytes} [Fri Aug 12 08:59:03 2022] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 38/109] 180.115.181.2 () {42 vars in 886 bytes} [Fri Aug 12 08:59:03 2022] GET /admin/ => generated 0 bytes in 40 msecs (HTTP/1.1 302) 9 headers in 339 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 39/110] 180.115.181.2 () {42 vars in 923 bytes} [Fri Aug 12 08:59:03 2022] GET /admin/login/?next=/admin/ => generated 2212 bytes in 144 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 18/111] 59.83.208.108 () {44 vars in 840 bytes} [Fri Aug 12 09:02:46 2022] GET /admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 35/112] 59.83.208.108 () {44 vars in 859 bytes} [Fri Aug 12 09:02:46 2022] GET /admin/ => generated 0 bytes in 20 msecs (HTTP/1.1 302) 9 headers in 339 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 19/113] 180.101.244.12 () {44 vars in 898 bytes} [Fri Aug 12 09:02:46 2022] GET /admin/login/?next=/admin/ => generated 2212 bytes in 90 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 36/114] 180.115.181.2 () {46 vars in 902 bytes} [Fri Aug 12 09:04:46 2022] POST /api/zhiku-login/ => generated 18 bytes in 78 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 21/115] 61.147.15.65 () {40 vars in 914 bytes} [Fri Aug 12 09:05:11 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 20/116] 61.147.15.67 () {40 vars in 684 bytes} [Fri Aug 12 09:06:16 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 21/117] 61.147.15.67 () {40 vars in 747 bytes} [Fri Aug 12 09:07:10 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 22/118] 220.196.160.95 () {44 vars in 843 bytes} [Fri Aug 12 09:07:40 2022] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 339 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 23/119] 59.83.208.103 () {44 vars in 897 bytes} [Fri Aug 12 09:07:40 2022] GET /admin/login/?next=/admin/ => generated 2212 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 40/120] 180.115.181.2 () {52 vars in 1190 bytes} [Fri Aug 12 09:08:40 2022] POST /admin/login/?next=/admin/ => generated 0 bytes in 199 msecs (HTTP/1.1 302) 12 headers in 665 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 22/121] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:08:40 2022] GET /admin/ => generated 9314 bytes in 73 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967478|app: 0|req: 24/122] 61.147.15.67 () {40 vars in 706 bytes} [Fri Aug 12 09:10:06 2022] GET /favicon.ico => generated 2347 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 37/123] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:12:00 2022] GET /admin/ => generated 9314 bytes in 31 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 25/124] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:12:01 2022] GET /admin/ => generated 9314 bytes in 26 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 41/125] 180.101.245.252 () {40 vars in 781 bytes} [Fri Aug 12 09:15:15 2022] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 6 headers in 189 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 26/126] 180.101.245.252 () {40 vars in 783 bytes} [Fri Aug 12 09:15:15 2022] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 339 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 27/127] 180.101.245.252 () {40 vars in 820 bytes} [Fri Aug 12 09:15:15 2022] GET /admin/login/?next=/admin/ => generated 2212 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 42/128] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:18:39 2022] GET /admin/ => generated 9314 bytes in 21 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 38/129] 180.115.181.2 () {44 vars in 949 bytes} [Fri Aug 12 09:18:39 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 23/130] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:18:45 2022] GET /admin/ => generated 9314 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 24/131] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:20:13 2022] GET /admin/ => generated 9314 bytes in 21 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 28/132] 220.196.160.75 () {40 vars in 782 bytes} [Fri Aug 12 09:21:43 2022] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 339 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 29/133] 220.196.160.75 () {40 vars in 819 bytes} [Fri Aug 12 09:21:43 2022] GET /admin/login/?next=/admin/ => generated 2212 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 39/134] 180.115.181.2 () {42 vars in 870 bytes} [Fri Aug 12 09:21:54 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967481|app: 0|req: 43/135] 180.115.181.2 () {42 vars in 830 bytes} [Fri Aug 12 09:21:54 2022] GET /favicon.ico => generated 2343 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 25/136] 180.115.181.2 () {46 vars in 1034 bytes} [Fri Aug 12 09:22:07 2022] GET /admin/ => generated 9314 bytes in 19 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 30/137] 180.115.181.2 () {44 vars in 961 bytes} [Fri Aug 12 09:22:10 2022] GET /admin/ => generated 9314 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 44/138] 180.115.181.2 () {44 vars in 901 bytes} [Fri Aug 12 09:22:24 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 31/139] 180.115.181.2 () {42 vars in 930 bytes} [Fri Aug 12 09:22:29 2022] GET /admin/ => generated 9314 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 26/140] 180.115.181.2 () {46 vars in 870 bytes} [Fri Aug 12 09:26:28 2022] POST / => generated 2297 bytes in 3 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 45/141] 180.115.181.2 () {46 vars in 870 bytes} [Fri Aug 12 09:26:42 2022] POST / => generated 2297 bytes in 3 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+打工人 Zxy020130.
+打工人 Zxy020130.
+[pid: 2967480|app: 0|req: 40/142] 183.209.95.174 () {46 vars in 909 bytes} [Fri Aug 12 09:27:17 2022] POST /api/zhiku-register/ => generated 24 bytes in 163 msecs (HTTP/1.1 200) 8 headers in 241 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 46/143] 183.209.95.174 () {46 vars in 903 bytes} [Fri Aug 12 09:27:24 2022] POST /api/zhiku-login/ => generated 24 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+Not Found: /api/gethrm/
+[pid: 2967479|app: 0|req: 27/144] 183.209.95.174 () {46 vars in 893 bytes} [Fri Aug 12 09:27:33 2022] POST /api/gethrm/ => generated 4776 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 32/145] 183.209.95.174 () {46 vars in 901 bytes} [Fri Aug 12 09:27:47 2022] POST /api/zhiweifabu/ => generated 2 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 33/146] 183.209.95.174 () {46 vars in 901 bytes} [Fri Aug 12 09:27:47 2022] POST /api/zhiweifabu/ => generated 2 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 47/147] 183.209.95.174 () {46 vars in 901 bytes} [Fri Aug 12 09:27:47 2022] POST /api/zhiweifabu/ => generated 2 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 34/148] 183.209.95.174 () {46 vars in 901 bytes} [Fri Aug 12 09:27:47 2022] POST /api/zhiweifabu/ => generated 2 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 48/149] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:28:06 2022] POST /api/zhiku-geren/ => generated 142 bytes in 21 msecs (HTTP/1.1 200) 8 headers in 247 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 28/150] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:28:48 2022] POST /api/zhiku-geren/ => generated 142 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 247 bytes (1 switches on core 0)
+2
+{'address': '', 'real_name': '打工人', 'job': '', 'age': '3', 'grjj': ''}
+[pid: 2967479|app: 0|req: 29/151] 183.209.95.174 () {46 vars in 915 bytes} [Fri Aug 12 09:29:02 2022] POST /api/edit/zhiku-geren/ => generated 67 bytes in 66 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 35/152] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:29:02 2022] POST /api/zhiku-geren/ => generated 140 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 247 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-qyxxgl/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 13, in qyxxgl
+    obj.mt = str(obj.mt)
+AttributeError: 'NoneType' object has no attribute 'logo'
+[pid: 2967480|app: 0|req: 41/153] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:29:12 2022] POST /api/zhiku-qyxxgl/ => generated 86991 bytes in 72 msecs (HTTP/1.1 500) 7 headers in 226 bytes (1 switches on core 0)
+Not Found: /api/edit/zhiku-qyjs/
+[pid: 2967481|app: 0|req: 49/154] 183.209.95.174 () {46 vars in 911 bytes} [Fri Aug 12 09:29:14 2022] POST /api/edit/zhiku-qyjs/ => generated 4803 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Internal Server Error: /api/edit/zhiku-flzd/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 67, in edit_flzd
+    # 福利制度修改
+AttributeError: 'NoneType' object has no attribute 'qiyearea'
+[pid: 2967481|app: 0|req: 50/155] 183.209.95.174 () {46 vars in 911 bytes} [Fri Aug 12 09:29:17 2022] POST /api/edit/zhiku-flzd/ => generated 86713 bytes in 29 msecs (HTTP/1.1 500) 7 headers in 226 bytes (1 switches on core 0)
+Internal Server Error: /api/edit/zhiku-flzd/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 67, in edit_flzd
+    # 福利制度修改
+AttributeError: 'NoneType' object has no attribute 'qiyearea'
+[pid: 2967478|app: 0|req: 36/156] 183.209.95.174 () {46 vars in 911 bytes} [Fri Aug 12 09:29:25 2022] POST /api/edit/zhiku-flzd/ => generated 86713 bytes in 30 msecs (HTTP/1.1 500) 7 headers in 226 bytes (1 switches on core 0)
+Not Found: /api/edit/zhiku-qyjs/
+[pid: 2967479|app: 0|req: 30/157] 183.209.95.174 () {46 vars in 911 bytes} [Fri Aug 12 09:29:25 2022] POST /api/edit/zhiku-qyjs/ => generated 4803 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-qyxxgl/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 13, in qyxxgl
+    obj.mt = str(obj.mt)
+AttributeError: 'NoneType' object has no attribute 'logo'
+[pid: 2967479|app: 0|req: 31/158] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:29:26 2022] POST /api/zhiku-qyxxgl/ => generated 86991 bytes in 30 msecs (HTTP/1.1 500) 7 headers in 226 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 51/159] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:29:26 2022] POST /api/zhiku-geren/ => generated 140 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 247 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 37/160] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:29:48 2022] POST /api/yonghu-login/ => generated 6 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+打工人 Zxy020130.
+打工人 Zxy020130.
+[pid: 2967479|app: 0|req: 32/161] 183.209.95.174 () {46 vars in 911 bytes} [Fri Aug 12 09:30:17 2022] POST /api/yonghu-register/ => generated 4 bytes in 14 msecs (HTTP/1.1 200) 8 headers in 240 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 33/162] 183.209.95.174 () {46 vars in 905 bytes} [Fri Aug 12 09:30:23 2022] POST /api/yonghu-login/ => generated 4 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967480|app: 0|req: 42/163] 183.209.95.174 () {42 vars in 784 bytes} [Fri Aug 12 09:30:28 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/grxx/
+[pid: 2967478|app: 0|req: 38/164] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:30:40 2022] POST /api/grxx/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/grys/
+[pid: 2967479|app: 0|req: 34/165] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:30:51 2022] POST /api/grys/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/qwzw/
+[pid: 2967481|app: 0|req: 52/166] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:30:52 2022] POST /api/qwzw/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/gzjl/
+[pid: 2967478|app: 0|req: 39/167] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:31:03 2022] POST /api/gzjl/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/jyjl/
+[pid: 2967481|app: 0|req: 53/168] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:31:05 2022] POST /api/jyjl/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/jnry/
+[pid: 2967481|app: 0|req: 54/169] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:31:06 2022] POST /api/jnry/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/jyjl/
+[pid: 2967479|app: 0|req: 35/170] 183.209.95.174 () {46 vars in 889 bytes} [Fri Aug 12 09:31:11 2022] POST /api/jyjl/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-geren/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/login/api.py", line 93, in geren
+    username = eval(username)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967478|app: 0|req: 40/171] 180.101.244.11 () {46 vars in 913 bytes} [Fri Aug 12 09:31:37 2022] GET /api/zhiku-geren/ => generated 85671 bytes in 27 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Method Not Allowed: /api/zhiku-register/
+[pid: 2967478|app: 0|req: 41/172] 59.83.208.106 () {46 vars in 918 bytes} [Fri Aug 12 09:32:03 2022] GET /api/zhiku-register/ => generated 5649 bytes in 35 msecs (HTTP/1.1 405) 8 headers in 403 bytes (1 switches on core 0)
+Not Found: /api/qwzw/
+[pid: 2967478|app: 0|req: 42/173] 59.83.208.103 () {46 vars in 898 bytes} [Fri Aug 12 09:32:54 2022] GET /api/qwzw/ => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967481|app: 0|req: 55/174] 180.101.245.252 () {46 vars in 910 bytes} [Fri Aug 12 09:33:10 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 56/175] 36.150.60.24 () {40 vars in 747 bytes} [Fri Aug 12 09:33:31 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 43/176] 36.150.60.24 () {40 vars in 683 bytes} [Fri Aug 12 09:33:35 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/gethrm/
+[pid: 2967480|app: 0|req: 44/177] 220.196.160.84 () {46 vars in 903 bytes} [Fri Aug 12 09:33:40 2022] GET /api/gethrm/ => generated 4775 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/edit/zhiku-qyjs/
+[pid: 2967479|app: 0|req: 36/178] 220.196.160.144 () {46 vars in 922 bytes} [Fri Aug 12 09:33:46 2022] GET /api/edit/zhiku-qyjs/ => generated 4802 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-qyxxgl/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 11, in qyxxgl
+    obj = Qiyeuser.objects.filter(username=username).first()
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967481|app: 0|req: 57/179] 220.196.160.117 () {46 vars in 916 bytes} [Fri Aug 12 09:33:52 2022] GET /api/zhiku-qyxxgl/ => generated 85775 bytes in 25 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /api/gzjl/
+[pid: 2967479|app: 0|req: 37/180] 220.196.160.76 () {46 vars in 899 bytes} [Fri Aug 12 09:33:52 2022] GET /api/gzjl/ => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/grxx/
+[pid: 2967478|app: 0|req: 43/181] 180.101.244.13 () {46 vars in 899 bytes} [Fri Aug 12 09:33:54 2022] GET /api/grxx/ => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+None
+Internal Server Error: /api/edit/zhiku-geren/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/login/api.py", line 116, in edit_geren
+    username = eval(username)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967481|app: 0|req: 58/182] 180.101.245.247 () {46 vars in 924 bytes} [Fri Aug 12 09:34:01 2022] GET /api/edit/zhiku-geren/ => generated 86111 bytes in 27 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /api/jyjl/
+[pid: 2967480|app: 0|req: 45/183] 59.83.208.105 () {46 vars in 898 bytes} [Fri Aug 12 09:34:02 2022] GET /api/jyjl/ => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiweifabu/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/zwgl/zwglapi.py", line 60, in Zhiweifabu
+TypeError: 'NoneType' object is not subscriptable
+[pid: 2967480|app: 0|req: 46/184] 220.196.160.83 () {46 vars in 911 bytes} [Fri Aug 12 09:34:04 2022] GET /api/zhiweifabu/ => generated 83786 bytes in 26 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 44/185] 59.83.208.107 () {44 vars in 826 bytes} [Fri Aug 12 09:34:09 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/edit/zhiku-flzd/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 62, in edit_flzd
+    }
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967481|app: 0|req: 59/186] 59.83.208.103 () {46 vars in 920 bytes} [Fri Aug 12 09:34:11 2022] GET /api/edit/zhiku-flzd/ => generated 85737 bytes in 28 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /api/grys/
+[pid: 2967480|app: 0|req: 47/187] 220.196.160.53 () {46 vars in 899 bytes} [Fri Aug 12 09:34:16 2022] GET /api/grys/ => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 45/188] 36.150.60.24 () {40 vars in 739 bytes} [Fri Aug 12 09:34:21 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Method Not Allowed: /api/yonghu-register/
+[pid: 2967479|app: 0|req: 38/189] 180.101.245.251 () {46 vars in 922 bytes} [Fri Aug 12 09:34:33 2022] GET /api/yonghu-register/ => generated 5623 bytes in 14 msecs (HTTP/1.1 405) 8 headers in 403 bytes (1 switches on core 0)
+Not Found: /api/jnry/
+[pid: 2967478|app: 0|req: 46/190] 180.101.245.251 () {46 vars in 900 bytes} [Fri Aug 12 09:34:35 2022] GET /api/jnry/ => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967481|app: 0|req: 60/191] 36.150.60.24 () {40 vars in 706 bytes} [Fri Aug 12 09:34:40 2022] GET /favicon.ico => generated 2347 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 61/192] 180.115.181.2 () {46 vars in 870 bytes} [Fri Aug 12 09:35:47 2022] POST / => generated 2297 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 47/193] 180.115.181.2 () {46 vars in 870 bytes} [Fri Aug 12 09:35:47 2022] POST / => generated 2297 bytes in 3 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 62/194] 180.115.181.2 () {46 vars in 904 bytes} [Fri Aug 12 09:36:00 2022] POST /api/yonghu-login/ => generated 8 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 63/195] 180.115.181.2 () {46 vars in 904 bytes} [Fri Aug 12 09:36:07 2022] POST /api/yonghu-login/ => generated 4 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967479|app: 0|req: 39/196] 180.115.181.2 () {42 vars in 783 bytes} [Fri Aug 12 09:36:10 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/grxx/
+[pid: 2967480|app: 0|req: 48/197] 180.115.181.2 () {46 vars in 888 bytes} [Fri Aug 12 09:36:18 2022] POST /api/grxx/ => generated 4770 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967478|app: 0|req: 48/198] 180.115.181.2 () {42 vars in 783 bytes} [Fri Aug 12 09:36:20 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 64/199] 180.115.181.2 () {42 vars in 930 bytes} [Fri Aug 12 09:36:47 2022] GET /admin/ => generated 9314 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 65/200] 180.115.181.2 () {44 vars in 1016 bytes} [Fri Aug 12 09:36:54 2022] GET /admin/app02/userinfo1/ => generated 8303 bytes in 67 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 40/201] 180.115.181.2 () {42 vars in 858 bytes} [Fri Aug 12 09:36:54 2022] GET /admin/jsi18n/ => generated 8376 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 197 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 49/202] 180.115.181.2 () {44 vars in 1026 bytes} [Fri Aug 12 09:37:02 2022] GET /admin/app01/zhiwei/ => generated 8685 bytes in 33 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 49/203] 180.115.181.2 () {42 vars in 855 bytes} [Fri Aug 12 09:37:02 2022] GET /admin/jsi18n/ => generated 8376 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 197 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 41/204] 180.115.181.2 () {44 vars in 1031 bytes} [Fri Aug 12 09:37:10 2022] GET /admin/app01/zhiwei/add/ => generated 13021 bytes in 57 msecs (HTTP/1.1 200) 9 headers in 470 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 42/205] 180.115.181.2 () {42 vars in 859 bytes} [Fri Aug 12 09:37:10 2022] GET /admin/jsi18n/ => generated 8376 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 197 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 66/206] 180.115.181.2 () {46 vars in 902 bytes} [Fri Aug 12 09:37:45 2022] POST /api/zhiku-login/ => generated 8 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 245 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 67/207] 180.115.181.2 () {46 vars in 902 bytes} [Fri Aug 12 09:37:55 2022] POST /api/zhiku-login/ => generated 18 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 246 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 43/208] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:37:59 2022] POST /api/zhiweifabu/ => generated 49 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 270 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 44/209] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:37:59 2022] POST /api/zhiweifabu/ => generated 28 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 270 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 50/210] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:37:59 2022] POST /api/zhiweifabu/ => generated 2 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 68/211] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:37:59 2022] POST /api/zhiweifabu/ => generated 2 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 45/212] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:38:07 2022] POST /api/zhiweifabu/ => generated 49 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 270 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 69/213] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:38:07 2022] POST /api/zhiweifabu/ => generated 28 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 270 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 46/214] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:38:07 2022] POST /api/zhiweifabu/ => generated 2 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 70/215] 180.115.181.2 () {46 vars in 900 bytes} [Fri Aug 12 09:38:07 2022] POST /api/zhiweifabu/ => generated 2 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 269 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 47/216] 61.147.15.65 () {40 vars in 851 bytes} [Fri Aug 12 09:38:41 2022] GET / => generated 2292 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 50/217] 61.147.15.67 () {40 vars in 743 bytes} [Fri Aug 12 09:39:08 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 51/218] 61.147.15.67 () {40 vars in 680 bytes} [Fri Aug 12 09:39:49 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967481|app: 0|req: 71/219] 180.115.181.2 () {42 vars in 783 bytes} [Fri Aug 12 09:40:50 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 48/220] 180.115.181.2 () {42 vars in 930 bytes} [Fri Aug 12 09:42:00 2022] GET /admin/ => generated 9314 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 51/221] 180.115.181.2 () {42 vars in 918 bytes} [Fri Aug 12 09:42:01 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api
+[pid: 2967481|app: 0|req: 72/222] 180.115.181.2 () {42 vars in 924 bytes} [Fri Aug 12 09:42:11 2022] GET /api => generated 2323 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967478|app: 0|req: 52/223] 180.115.181.2 () {42 vars in 944 bytes} [Fri Aug 12 09:42:31 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 49/224] 180.101.245.250 () {46 vars in 930 bytes} [Fri Aug 12 09:42:43 2022] GET /admin/app02/userinfo1/ => generated 0 bytes in 2 msecs (HTTP/1.1 302) 9 headers in 355 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 52/225] 180.101.245.250 () {44 vars in 947 bytes} [Fri Aug 12 09:42:43 2022] GET /admin/login/?next=/admin/app02/userinfo1/ => generated 2244 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 50/226] 220.196.160.53 () {46 vars in 944 bytes} [Fri Aug 12 09:43:52 2022] GET /admin/app01/zhiwei/add/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 356 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 53/227] 59.83.208.106 () {44 vars in 948 bytes} [Fri Aug 12 09:43:52 2022] GET /admin/login/?next=/admin/app01/zhiwei/add/ => generated 2246 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967480|app: 0|req: 53/228] 61.147.15.67 () {40 vars in 702 bytes} [Fri Aug 12 09:43:57 2022] GET /favicon.ico => generated 2343 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 51/229] 220.196.160.124 () {46 vars in 940 bytes} [Fri Aug 12 09:43:58 2022] GET /admin/app01/zhiwei/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 352 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 73/230] 220.196.160.124 () {44 vars in 938 bytes} [Fri Aug 12 09:43:58 2022] GET /admin/login/?next=/admin/app01/zhiwei/ => generated 2238 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 52/231] 180.101.245.251 () {46 vars in 928 bytes} [Fri Aug 12 09:46:05 2022] GET /admin/jsi18n/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 234 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 54/232] 180.101.245.251 () {44 vars in 920 bytes} [Fri Aug 12 09:46:05 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2226 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967480|app: 0|req: 54/233] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:52:35 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967481|app: 0|req: 74/234] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:52:49 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967478|app: 0|req: 55/235] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:52:50 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967479|app: 0|req: 53/236] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:52:51 2022] GET /api/getzhiwei => generated 4781 bytes in 5 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api
+[pid: 2967480|app: 0|req: 55/237] 220.196.160.53 () {44 vars in 837 bytes} [Fri Aug 12 09:52:52 2022] GET /api => generated 2323 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967478|app: 0|req: 56/238] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:52:52 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967481|app: 0|req: 75/239] 220.196.160.124 () {44 vars in 858 bytes} [Fri Aug 12 09:53:56 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967480|app: 0|req: 56/240] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:57:24 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967479|app: 0|req: 54/241] 180.115.181.2 () {44 vars in 975 bytes} [Fri Aug 12 09:57:26 2022] GET /api/getzhiwei => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967481|app: 0|req: 76/242] 180.115.181.2 () {42 vars in 926 bytes} [Fri Aug 12 09:57:31 2022] GET /api/ => generated 4754 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 57/243] 180.115.181.2 () {42 vars in 930 bytes} [Fri Aug 12 09:57:39 2022] GET /admin/ => generated 9314 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 301 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 58/244] 180.115.181.2 () {42 vars in 918 bytes} [Fri Aug 12 09:57:43 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api
+[pid: 2967481|app: 0|req: 77/245] 180.115.181.2 () {42 vars in 924 bytes} [Fri Aug 12 09:58:06 2022] GET /api => generated 2323 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/login
+[pid: 2967481|app: 0|req: 78/246] 180.115.181.2 () {42 vars in 936 bytes} [Fri Aug 12 09:58:14 2022] GET /api/login => generated 4769 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/ zhiku-login/
+[pid: 2967480|app: 0|req: 57/247] 180.115.181.2 () {42 vars in 954 bytes} [Fri Aug 12 09:58:28 2022] GET /api/%20zhiku-login/ => generated 4795 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 55/248] 180.115.181.2 () {42 vars in 950 bytes} [Fri Aug 12 09:58:39 2022] GET /api/zhiku-login/ => generated 6902 bytes in 15 msecs (HTTP/1.1 200) 8 headers in 392 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967481|app: 0|req: 79/249] 180.115.181.2 () {42 vars in 926 bytes} [Fri Aug 12 09:58:54 2022] GET /api/ => generated 4754 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 56/250] 220.196.160.125 () {42 vars in 869 bytes} [Fri Aug 12 09:59:41 2022] GET /admin/app02/userinfo1/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 355 bytes (1 switches on core 0)
+[pid: 2967480|app: 0|req: 58/251] 220.196.160.125 () {42 vars in 906 bytes} [Fri Aug 12 09:59:41 2022] GET /admin/login/?next=/admin/app02/userinfo1/ => generated 2244 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 57/252] 113.31.104.86 () {40 vars in 685 bytes} [Fri Aug 12 10:00:10 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 59/253] 220.196.160.73 () {42 vars in 883 bytes} [Fri Aug 12 10:00:50 2022] GET /admin/app01/zhiwei/add/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 356 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 80/254] 220.196.160.73 () {42 vars in 920 bytes} [Fri Aug 12 10:00:50 2022] GET /admin/login/?next=/admin/app01/zhiwei/add/ => generated 2246 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 60/255] 220.196.160.146 () {42 vars in 879 bytes} [Fri Aug 12 10:01:16 2022] GET /admin/app01/zhiwei/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 9 headers in 352 bytes (1 switches on core 0)
+[pid: 2967478|app: 0|req: 61/256] 220.196.160.146 () {42 vars in 916 bytes} [Fri Aug 12 10:01:16 2022] GET /admin/login/?next=/admin/app01/zhiwei/ => generated 2238 bytes in 10 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+[pid: 2967481|app: 0|req: 81/257] 180.101.245.246 () {42 vars in 867 bytes} [Fri Aug 12 10:04:16 2022] GET /admin/jsi18n/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 234 bytes (1 switches on core 0)
+[pid: 2967479|app: 0|req: 58/258] 180.101.245.246 () {42 vars in 904 bytes} [Fri Aug 12 10:04:16 2022] GET /admin/login/?next=/admin/jsi18n/ => generated 2226 bytes in 11 msecs (HTTP/1.1 200) 9 headers in 469 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967480|app: 0|req: 59/259] 113.31.104.86 () {40 vars in 707 bytes} [Fri Aug 12 10:05:05 2022] GET /favicon.ico => generated 2347 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967480|app: 0|req: 60/260] 180.101.245.252 () {44 vars in 840 bytes} [Fri Aug 12 10:07:34 2022] GET /api/ => generated 4754 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967479|app: 0|req: 59/261] 180.115.181.2 () {44 vars in 957 bytes} [Fri Aug 12 10:07:48 2022] GET /api/ => generated 4754 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967478|app: 0|req: 62/262] 180.101.245.247 () {44 vars in 840 bytes} [Fri Aug 12 10:09:25 2022] GET /api/ => generated 4754 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967481|app: 0|req: 82/263] 180.115.181.2 () {42 vars in 783 bytes} [Fri Aug 12 10:14:04 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 7 headers in 205 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967479|app: 0|req: 60/264] 180.115.181.2 () {42 vars in 878 bytes} [Fri Aug 12 10:15:15 2022] GET /api/ => generated 4750 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967480|app: 0|req: 61/265] 180.115.181.2 () {42 vars in 870 bytes} [Fri Aug 12 10:15:20 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967479|app: 0|req: 61/266] 180.115.181.2 () {42 vars in 896 bytes} [Fri Aug 12 10:15:43 2022] GET /api/getzhiwei => generated 4777 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967479|app: 0|req: 62/267] 180.115.181.2 () {42 vars in 946 bytes} [Fri Aug 12 10:18:07 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Method Not Allowed: /api/yonghu-register/
+[pid: 2967481|app: 0|req: 83/268] 180.115.181.2 () {42 vars in 958 bytes} [Fri Aug 12 10:18:27 2022] GET /api/yonghu-register/ => generated 5655 bytes in 15 msecs (HTTP/1.1 405) 8 headers in 403 bytes (1 switches on core 0)
+Not Found: /api/zhiwei-detail/
+[pid: 2967478|app: 0|req: 63/269] 180.115.181.2 () {42 vars in 954 bytes} [Fri Aug 12 10:18:48 2022] GET /api/zhiwei-detail/ => generated 4796 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/submit-jianli/
+[pid: 2967478|app: 0|req: 64/270] 180.115.181.2 () {42 vars in 954 bytes} [Fri Aug 12 10:18:50 2022] GET /api/submit-jianli/ => generated 4796 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/edit/zhiku-addflzd/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 83, in edit_addflzd
+    Qiyeuser.objects.filter(username=username).update(ATO=ATO)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967480|app: 0|req: 62/271] 180.115.181.2 () {42 vars in 964 bytes} [Fri Aug 12 10:19:02 2022] GET /api/edit/zhiku-addflzd/ => generated 86690 bytes in 29 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+None None
+[pid: 2967479|app: 0|req: 63/272] 180.115.181.2 () {42 vars in 948 bytes} [Fri Aug 12 10:19:23 2022] GET /api/zhiweiedit/ => generated 6909 bytes in 18 msecs (HTTP/1.1 200) 8 headers in 416 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiweifabu/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/zwgl/zwglapi.py", line 60, in Zhiweifabu
+TypeError: 'NoneType' object is not subscriptable
+[pid: 2967480|app: 0|req: 63/273] 180.115.181.2 () {42 vars in 948 bytes} [Fri Aug 12 10:19:35 2022] GET /api/zhiweifabu/ => generated 84314 bytes in 28 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Internal Server Error: /api/edit/zhiku-flzd/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 62, in edit_flzd
+    }
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967478|app: 0|req: 65/274] 180.115.181.2 () {42 vars in 958 bytes} [Fri Aug 12 10:19:47 2022] GET /api/edit/zhiku-flzd/ => generated 86266 bytes in 62 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /api/hrm-del/
+[pid: 2967479|app: 0|req: 64/275] 180.115.181.2 () {42 vars in 942 bytes} [Fri Aug 12 10:19:57 2022] GET /api/hrm-del/ => generated 4778 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-unsa/
+[pid: 2967481|app: 0|req: 84/276] 180.115.181.2 () {42 vars in 944 bytes} [Fri Aug 12 10:20:01 2022] GET /api/hrm-unsa/ => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-fav/
+[pid: 2967481|app: 0|req: 85/277] 180.115.181.2 () {42 vars in 942 bytes} [Fri Aug 12 10:20:05 2022] GET /api/hrm-fav/ => generated 4778 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-detail/
+[pid: 2967478|app: 0|req: 66/278] 180.115.181.2 () {42 vars in 948 bytes} [Fri Aug 12 10:20:10 2022] GET /api/hrm-detail/ => generated 4787 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-geren/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/login/api.py", line 93, in geren
+    username = eval(username)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967480|app: 0|req: 64/279] 180.115.181.2 () {42 vars in 950 bytes} [Fri Aug 12 10:20:24 2022] GET /api/zhiku-geren/ => generated 86199 bytes in 28 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+None
+Internal Server Error: /api/edit/zhiku-geren/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/login/api.py", line 116, in edit_geren
+    username = eval(username)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967480|app: 0|req: 65/280] 180.115.181.2 () {42 vars in 960 bytes} [Fri Aug 12 10:20:32 2022] GET /api/edit/zhiku-geren/ => generated 86638 bytes in 28 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+None
+Internal Server Error: /api/edit/zhiku-geren/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/login/api.py", line 116, in edit_geren
+    username = eval(username)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967481|app: 0|req: 86/281] 180.115.181.2 () {42 vars in 960 bytes} [Fri Aug 12 10:20:40 2022] GET /api/edit/zhiku-geren/ => generated 86638 bytes in 59 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-qyxxgl/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 11, in qyxxgl
+    obj = Qiyeuser.objects.filter(username=username).first()
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967481|app: 0|req: 87/282] 180.115.181.2 () {42 vars in 952 bytes} [Fri Aug 12 10:20:54 2022] GET /api/zhiku-qyxxgl/ => generated 86302 bytes in 29 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967479|app: 0|req: 65/283] 101.68.211.3 () {34 vars in 461 bytes} [Fri Aug 12 10:21:31 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 88/284] 101.68.211.3 () {36 vars in 522 bytes} [Fri Aug 12 10:21:31 2022] GET / => generated 2288 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2967481|app: 0|req: 89/285] 101.68.211.3 () {36 vars in 544 bytes} [Fri Aug 12 10:21:31 2022] GET /favicon.ico => generated 2339 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /robots.txt
+[pid: 2967481|app: 0|req: 90/286] 101.68.211.3 () {36 vars in 542 bytes} [Fri Aug 12 10:21:31 2022] GET /robots.txt => generated 2336 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+None None
+[pid: 2967479|app: 0|req: 66/287] 220.196.160.96 () {44 vars in 861 bytes} [Fri Aug 12 10:21:45 2022] GET /api/zhiweiedit/ => generated 6877 bytes in 49 msecs (HTTP/1.1 200) 8 headers in 416 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967480|app: 0|req: 66/288] 180.101.245.249 () {44 vars in 854 bytes} [Fri Aug 12 10:22:06 2022] GET /api/getzhiwei => generated 4777 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-unsa/
+[pid: 2967480|app: 0|req: 67/289] 180.101.245.250 () {44 vars in 858 bytes} [Fri Aug 12 10:22:24 2022] GET /api/hrm-unsa/ => generated 4781 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/edit/zhiku-addflzd/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 83, in edit_addflzd
+    Qiyeuser.objects.filter(username=username).update(ATO=ATO)
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967479|app: 0|req: 67/290] 180.101.245.252 () {44 vars in 878 bytes} [Fri Aug 12 10:22:33 2022] GET /api/edit/zhiku-addflzd/ => generated 86007 bytes in 26 msecs (HTTP/1.1 500) 6 headers in 194 bytes (1 switches on core 0)
+Not Found: /api/zhiwei-detail/
+[pid: 2967480|app: 0|req: 68/291] 220.196.160.76 () {44 vars in 867 bytes} [Fri Aug 12 10:22:53 2022] GET /api/zhiwei-detail/ => generated 4796 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-fav/
+[pid: 2967478|app: 0|req: 67/292] 220.196.160.84 () {44 vars in 855 bytes} [Fri Aug 12 10:23:04 2022] GET /api/hrm-fav/ => generated 4778 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-detail/
+[pid: 2967481|app: 0|req: 91/293] 59.83.208.108 () {44 vars in 860 bytes} [Fri Aug 12 10:23:35 2022] GET /api/hrm-detail/ => generated 4787 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/
+[pid: 2967481|app: 0|req: 92/294] 220.196.160.45 () {44 vars in 835 bytes} [Fri Aug 12 10:23:53 2022] GET /api/ => generated 4750 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/hrm-del/
+[pid: 2967481|app: 0|req: 93/295] 220.196.160.76 () {44 vars in 855 bytes} [Fri Aug 12 10:25:07 2022] GET /api/hrm-del/ => generated 4778 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/submit-jianli/
+[pid: 2967478|app: 0|req: 68/296] 220.196.160.146 () {44 vars in 868 bytes} [Fri Aug 12 10:25:25 2022] GET /api/submit-jianli/ => generated 4796 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967480|app: 0|req: 69/297] 180.115.181.2 () {44 vars in 927 bytes} [Fri Aug 12 10:33:08 2022] GET /api/getzhiwei => generated 4777 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei
+[pid: 2967479|app: 0|req: 68/298] 180.115.181.2 () {44 vars in 927 bytes} [Fri Aug 12 10:33:09 2022] GET /api/getzhiwei => generated 4777 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967478|app: 0|req: 69/299] 180.115.181.2 () {42 vars in 870 bytes} [Fri Aug 12 10:33:16 2022] GET / => generated 2292 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Not Found: /
+[pid: 2967481|app: 0|req: 94/300] 180.115.181.2 () {42 vars in 918 bytes} [Fri Aug 12 10:33:25 2022] GET / => generated 2296 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+Internal Server Error: /api/zhiku-qyxxgl/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/cert/certapi.py", line 11, in qyxxgl
+    obj = Qiyeuser.objects.filter(username=username).first()
+TypeError: eval() arg 1 must be a string, bytes or code object
+[pid: 2967478|app: 0|req: 70/301] 180.115.181.2 () {42 vars in 952 bytes} [Fri Aug 12 10:33:34 2022] GET /api/zhiku-qyxxgl/ => generated 86312 bytes in 28 msecs (HTTP/1.1 500) 7 headers in 293 bytes (1 switches on core 0)
+Not Found: /api/getzhiwei/
+[pid: 2967480|app: 0|req: 70/302] 180.115.181.2 () {42 vars in 902 bytes} [Fri Aug 12 10:33:44 2022] GET /api/getzhiwei/ => generated 4784 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
+None None
+Internal Server Error: /api/zhiweiedit/
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 209, in get_new_connection
+    conn = Database.connect(**conn_params)
+sqlite3.OperationalError: unable to open database file
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/djangoproject/./app01/zwgl/zwglapi.py", line 135, in Zhiweiedit
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/models/query.py", line 783, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1535, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1167, in execute_sql
+    cursor = self.connection.cursor()
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 259, in cursor
+    return self._cursor()
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 235, in _cursor
+    self.ensure_connection()
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 219, in ensure_connection
+    self.connect()
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/base/base.py", line 200, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+  File "/home/ubuntu/zhiku/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 209, in get_new_connection
+    conn = Database.connect(**conn_params)
+django.db.utils.OperationalError: unable to open database file
+[pid: 2967481|app: 0|req: 95/303] 59.83.208.104 () {40 vars in 799 bytes} [Fri Aug 12 10:37:52 2022] GET /api/zhiweiedit/ => generated 167417 bytes in 128 msecs (HTTP/1.1 500) 6 headers in 195 bytes (1 switches on core 0)
+Not Found: /api/zhiweiedit/Django
+[pid: 2967481|app: 0|req: 96/304] 157.255.11.80 () {46 vars in 1098 bytes} [Fri Aug 12 10:37:57 2022] GET /api/zhiweiedit/Django => generated 4805 bytes in 4 msecs (HTTP/1.1 404) 6 headers in 173 bytes (1 switches on core 0)
